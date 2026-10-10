@@ -1,0 +1,20 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1791327922414,
+      "tag": "0000_parallel_wildside",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1791469097708,
+      "tag": "0001_flippant_next_avengers",
+      "breakpoints": true
+    }
+  ]
+}
