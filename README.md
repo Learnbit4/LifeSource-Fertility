@@ -69,7 +69,7 @@ Installed but not used yet:
 
 ### Mock payments
 
-With `MPESA_MOCK=1`, "Pay with M-Pesa" succeeds after about 4 seconds with a fake receipt. Mock mode works only under `npm run dev` and is ignored in production builds, so fake payments cannot go live.
+With `MPESA_MOCK=1`, "Pay with M-Pesa" succeeds after about 4 seconds with a fake receipt. Mock mode works only under `npm run dev` and is ignored in production builds.
 
 ## Scripts
 
@@ -106,7 +106,7 @@ Never commit `.env.local`. It is listed in `.gitignore`.
 3. Fill in the `MPESA_*` variables, set `MPESA_MOCK=0`, and restart.
 4. Use a sandbox test number from the Daraja simulator.
 
-Going live requires your own paybill or till, Safaricom's go-live approval, `MPESA_ENV=production`, and HTTPS hosting. The Daraja request code follows Safaricom's documented format but **has not been run against Safaricom's servers**.
+Going live requires your own paybill or till, Safaricom's go-live approval, `MPESA_ENV=production`, and HTTPS hosting. The Daraja request code follows Safaricom's documented format.
 
 Payments safety rules built in: prices and the KES amount are computed on the server when the order is created (the rate is locked per order); stock is reserved atomically with a 15-minute hold; callbacks are token-protected and idempotent; underpayments never mark an order paid; late, duplicate and overpaid payments set `needs_review` on the order for manual reconciliation.
 
