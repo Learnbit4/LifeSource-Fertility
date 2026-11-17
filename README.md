@@ -153,4 +153,4 @@ scripts/user.ts       Staff command-line tool
 
 ## License
 
-No license has been chosen. Until one is added, all rights are reserved by the repository owner.
+MIT Licenced
